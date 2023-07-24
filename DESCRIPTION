@@ -1,0 +1,27 @@
+Package: NEGMoE
+Type: Package
+Title: Nutrition-Enterotype Garphical Mixture of Expert Model
+Version: 1.1.0
+Author: Xiangnan Xu[aut, cre]
+Maintainer: Xiangnan Xu <xiangnan.xu@sydney.edu.au>
+Description: A nutrition aware regularized graphical mixture of experts model addressing
+            diet cohort heterogeneity of microbial co-abundance network.
+            Also can be viewed as regularized mixture of experts models with
+            the elastic penalty and graphical lasso model. 
+License: GPL (>= 3)
+Depends: R (>= 3.5)
+Imports: methods, stats, Matrix, graphics, MASS, base, glmnet,
+        phyloseq, ggplot2, reshape2, BiocParallel, S4Vectors, ggpubr,
+        purrr, mclust, ggnetwork, network
+Suggests: knitr, rmarkdown
+LinkingTo: Rcpp, RcppEigen
+Collate: build.R Criterion.R Elnet_pseudo.R EM_GMoE.R EM_Gstep.R
+        fitNEGMoE.R GLasso.R Likeli_ps.R NEGMoE_class.R NEGMoE_crit.R
+        NEGMoE_cv.R NEGMoE_plot.R opt_Elnet.R opt_Elnets.R opt_multi.R
+        sim_data.R stop_crit.R utils.R
+VignetteBuilder: knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+NeedsCompilation: yes
+Packaged: 2023-07-24 05:23:59 UTC; Lenovo
